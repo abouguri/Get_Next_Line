@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_tools.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abouguri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/04 21:24:09 by abouguri          #+#    #+#             */
-/*   Updated: 2024/01/04 21:51:24 by abouguri         ###   ########.fr       */
+/*   Created: 2024/01/04 21:50:22 by abouguri          #+#    #+#             */
+/*   Updated: 2024/01/04 21:50:27 by abouguri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "get_next_line.h"
 
@@ -39,7 +40,7 @@ char	*ft_strchr(char *src, int c)
 
 char	*ft_read_line(char *src)
 {
-	int		i;
+	int	i;
 	char	*str;
 
 	i = 0;
@@ -90,8 +91,8 @@ char	*ft_save(char *src)
 
 char	*ft_strjoin(char *s1, char *s2)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*str;
 
 	i = 0;

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/04 20:44:37 by abouguri          #+#    #+#             */
+/*   Updated: 2024/01/04 21:17:51 by abouguri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	*get_line(char *src, int fd)
@@ -6,11 +18,8 @@ char	*get_line(char *src, int fd)
 	int		size;
 
 	buffer = malloc(sizeof(char) * (BUFFER_SIZE + 1));
-	if (buffer == NULL)
-	{
-		free(buffer);
+	if (!buffer)
 		return (NULL);
-	}
 	size = 1;
 	while (!ft_strchr(src, '\n') && size != 0)
 	{
