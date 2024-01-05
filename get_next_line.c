@@ -6,7 +6,7 @@
 /*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 20:44:37 by abouguri          #+#    #+#             */
-/*   Updated: 2024/01/04 21:17:51 by abouguri         ###   ########.fr       */
+/*   Updated: 2024/01/05 18:13:16 by abouguri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*get_next_line(int fd)
 	if (next_line == NULL)
 		return (NULL);
 	line = ft_read_line(next_line);
-	next_line = ft_save(next_line);
+	next_line = ft_save_after_nl(next_line);
 	if (line[0] == '\0')
 	{
 		free(next_line);

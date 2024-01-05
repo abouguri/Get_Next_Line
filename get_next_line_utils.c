@@ -6,7 +6,7 @@
 /*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 21:59:44 by abouguri          #+#    #+#             */
-/*   Updated: 2024/01/05 18:01:22 by abouguri         ###   ########.fr       */
+/*   Updated: 2024/01/05 18:15:26 by abouguri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,27 +63,27 @@ char	*ft_read_line(char *src)
 	return (line);
 }
 
-char	*ft_save(char *src)
+char	*ft_save_after_nl(char *src)
 {
-	int		i;
+	int		nl_index;
 	int		j;
 	char	*str;
 
-	i = 0;
-	while (src[i] != '\0' && src[i] != '\n')
-		i++;
-	if (src[i] == '\0')
+	nl_index = 0;
+	while (src[nl_index] != '\0' && src[nl_index] != '\n')
+		nl_index++;
+	if (src[nl_index] == '\0')
 	{
 		free(src);
-		return (0);
+		return (NULL);
 	}
-	str = (char *)malloc(sizeof(char) * (ft_strlen(src) - i + 1));
+	str = (char *)malloc(sizeof(char) * (ft_strlen(src) - nl_index + 1));
 	if (str == NULL)
 		return (NULL);
-	i = i + 1;
+	nl_index = nl_index + 1;
 	j = 0;
-	while (src[i] != '\0')
-		str[j++] = src[i++];
+	while (src[nl_index] != '\0')
+		str[j++] = src[nl_index++];
 	str[j] = '\0';
 	free(src);
 	return (str);
