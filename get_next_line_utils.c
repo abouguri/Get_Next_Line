@@ -6,7 +6,7 @@
 /*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 21:59:44 by abouguri          #+#    #+#             */
-/*   Updated: 2024/01/04 21:59:46 by abouguri         ###   ########.fr       */
+/*   Updated: 2024/01/05 18:01:22 by abouguri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,26 +40,27 @@ char	*ft_strchr(char *src, int c)
 char	*ft_read_line(char *src)
 {
 	int		i;
-	char	*str;
+	int		length;
+	char	*line;
 
+	length = 0;
 	i = 0;
-	if (src == NULL)
+	if (!src)
 		return (NULL);
-	while (src[i] != '\0' && src[i] != '\n')
-		i++;
-	str = (char *)malloc(sizeof(char) * (i + 2));
-	if (str == NULL)
+	while (src[length] && src[length] != '\n')
+		length++;
+	line = malloc(length + 2);
+	if (!line)
 		return (NULL);
-	i = 0;
-	while (src[i] != '\0' && src[i] != '\n')
+	while (i < length)
 	{
-		str[i] = src[i];
+		line[i] = src[i];
 		i++;
 	}
-	if (src[i] == '\n')
-		str[i++] = '\n';
-	str[i] = '\0';
-	return (str);
+	if (src[length] == '\n')
+		line[length++] = '\n';
+	line[length] = '\0';
+	return (line);
 }
 
 char	*ft_save(char *src)
