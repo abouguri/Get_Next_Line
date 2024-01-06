@@ -9,7 +9,7 @@ Get_Next_Line (GNL) is your lab for concocting efficient file reading methods. D
 Mandatory Part: The Blue Meth of File Reading
 
 <p align="center">
-<img src="https://media3.giphy.com/media/ko8HPo4iQxcZi/giphy.gif" width="700">
+<img src="https://gifrific.com/wp-content/uploads/2013/12/Breaking-Bad-Were-Done-When-I-Say-Were-Done.gif" width="700">
 <p/>
 
 ### Function: get_next_line
