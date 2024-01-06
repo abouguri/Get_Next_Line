@@ -19,6 +19,7 @@ Master the art of reading a line from a file descriptor.
 
 ### Return:
 The line, crystal clear and pure.
+
 NULL if the batch is done or an error breaks bad.
 
 ### Method:
@@ -26,6 +27,7 @@ Just like cooking the perfect batch of blue meth, this function meticulously rea
 
 ### Enhancements:
 Juggle multiple file descriptors with a single static variable. Handle them like Heisenberg handled his empire.
+
 Keep the reading continuity on each descriptor as smooth as Mike's operations.
 ### Usage Scenario:
 Seamlessly switch between file descriptors (e.g., fd 3, 4, and 5) like Gus Fring switches business tactics, without losing the thread.
@@ -41,6 +43,7 @@ get_next_line.h - The recipe for the standard batch.
 
 ### The Ingredients (Source Files):
 get_next_line.c - Mandatory cooking instructions.
+
 get_next_line_utils.c - The utilities to perfect the product.
 
 ## Installation and Usage
