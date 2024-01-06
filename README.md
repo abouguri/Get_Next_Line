@@ -9,7 +9,7 @@ Get_Next_Line (GNL) is your lab for concocting efficient file reading methods. D
 Mandatory Part: The Blue Meth of File Reading
 
 <p align="center">
-<img src="https://media3.giphy.com/media/ko8HPo4iQxcZi/giphy.gif?cid=ecf05e47gsr834ekejf9br1k2qw4lh03echy4ptu3tqc2wn3&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="500">
+<img src="https://media3.giphy.com/media/ko8HPo4iQxcZi/giphy.gif" width="700">
 <p/>
 
 ### Function: get_next_line
@@ -33,7 +33,7 @@ Seamlessly switch between file descriptors (e.g., fd 3, 4, and 5) like Gus Fring
 ## Project Structure
 
 <p align="center">
-<img src="https://media0.giphy.com/media/MBVemoHuyw9Ik/giphy.gif?cid=ecf05e474wt22lxa23nzakgyqh4dwwh9ueb9i0d5ey0k0zcl&ep=v1_gifs_related&rid=giphy.gif&ct=g">
+<img src="https://media0.giphy.com/media/MBVemoHuyw9Ik/giphy.gif" width="700">
 <p/>
 
 ### The Lab Equipment (Header Files):
@@ -44,6 +44,10 @@ get_next_line.c - Mandatory cooking instructions.
 get_next_line_utils.c - The utilities to perfect the product.
 
 ## Installation and Usage
+
+<p align="center">
+<img src="https://media0.giphy.com/media/3oEjI8Kq5HhZLCrqBW/giphy.gif" width="700">
+<p/>
 
 ### Requirements:
 A C compiler (like gcc) - the RV of your operation.
