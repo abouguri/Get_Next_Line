@@ -6,7 +6,7 @@
 /*   By: abouguri <abouguri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 21:53:13 by abouguri          #+#    #+#             */
-/*   Updated: 2024/01/07 16:02:06 by abouguri         ###   ########.fr       */
+/*   Updated: 2024/01/09 15:28:12 by abouguri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,9 @@ int	main(void)
 	char	*s;
 
 	fd = open("test.txt", O_RDONLY | O_WRONLY);
-	s = get_next_line(fd);
-	while (s)
-	{
+	do{
 		s = get_next_line(fd);
 		printf("%s", s);
 		sleep(1);
-	}
+	}while (s);
 }
